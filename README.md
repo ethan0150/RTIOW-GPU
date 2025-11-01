@@ -12,9 +12,9 @@ This project is tested on both Windows 10 and 11 and should be able to run on an
 .\vcpkg install glfw3
 .\vcpkg install glm
 ```
-9. Open the RTIOW-GPU folder w/ Visual Studio and wait a few seconds for CMake generation to complete. There should be something like `CMake generation finished.` in the output at the bottom of the Visual Studio window on completion.
+9. Open the src folder w/ Visual Studio and wait a few seconds for CMake generation to complete. There should be something like `CMake generation finished.` in the output at the bottom of the Visual Studio window on completion.
 10. Click **Build > Build All**.
-11. Navigate to RTIOW-GPU\out\build\x64-Debug\bin and open a terminal there.
+11. Navigate to src\out\build\x64-Debug\bin and open a terminal there.
 12. Run `$executionTime = Measure-Command { .\raytracer.exe }`
 13. output.ppm should now show up in the same directory. Run `$executionTime.TotalSeconds` to see how much time is consumed to generate it.
 The below steps are for running the original CPU-based raytracer:
